@@ -56,6 +56,9 @@ class App extends Component {
   render() {
     return (
       <div className="main">
+        <div>
+          <h1>My To-dos</h1>
+        </div>
         <header>
           <form id="todoForm" onSubmit={this.addItem}>
             <input
@@ -67,7 +70,11 @@ class App extends Component {
             <button type="submit">Add</button>
           </form>
         </header>
-        <ListItems items={this.state.items}></ListItems>
+
+        <ListItems
+          items={this.state.items}
+          deleteItem={this.deleteItem}
+        ></ListItems>
       </div>
     );
   }

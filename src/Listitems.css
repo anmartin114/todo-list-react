@@ -10,6 +10,7 @@
 .list p {
   padding: 10px;
   position: relative;
+  color: rgb(253, 241, 201);
 }
 
 .list p span {
